@@ -2,6 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ginie from "../assets/ginie.png"
+import home from "../assets/home1.png"
+import home2 from "../assets/home2.png"
+import home3 from "../assets/home3.png"
+import LandingCard from './LandingCard'
 
 function Landing() {
     return (
@@ -24,8 +28,42 @@ function Landing() {
                  title='hello'   />
             </div>
           
-          
+          <div className="flex flex-col lg:flex-row ml-12 mt-4">
+              <div className="mt-4">
+              <Image className="flex flex-wrap content-center" src={home} alt="Picture of the author" width={302} height={205}
+                 title='hello'   />
+              </div>
+              <div className="ml-2">
+              <Image className="flex flex-wrap content-center" src={home2} alt="Picture of the author" width={302} height={205}
+                 title='hello'   />
+              </div>
+              <div className="ml-2">
+              <Image className="flex flex-wrap content-center" src={home3} alt="Picture of the author" width={302} height={205}
+                 title='hello'   />
+              </div>
+          </div>
 
+          <div className="pt-4">
+                <h1 className="text-white text-center text-lg font-bold">Comparez les meilleurs casinos en ligne et bonus de dépôt
+                </h1>
+                <h1 className="text-white text-center font-medium text-sm">Bénéficiez d'offres de bonus exclusives pour vos casinos et machines à sous préférées
+                </h1>
+            </div>
+
+            <div className="grid grid-cols-3 mr-4 mt-6">
+                <LandingCard/>
+                <LandingCard/>
+                <LandingCard/>
+
+                <LandingCard/>
+                <LandingCard/>
+                <LandingCard/>
+
+                <LandingCard/>
+                <LandingCard/>
+                <LandingCard/>
+                
+            </div>
 
           <ul>
               <li>hello</li>
