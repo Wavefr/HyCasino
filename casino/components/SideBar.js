@@ -9,7 +9,7 @@ import pic from "../assets/pic.png"
 
 function SideBar() {
     return (
-        <div className="max-w-md lg:max-w-sm h-full bg-primary2 text-white font-medium">
+        <div className="max-w-full md:max-w-2xl lg:max-w-2xl h-full bg-primary2 text-white font-medium">
             <div className="p-6 justify-center">
             <Image src={logo} alt="Picture of the author" width={221} height={96}
              />
