@@ -83,7 +83,12 @@ function Landing() {
                 <p className="text-center">Do you have any questions? We have the answers. Browse our FAQ section and resolve your concerns instantly.
                 </p>
                 <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
-                <h1 className="">How do I know if an online casino is safe?</h1>
+                <h1 className="">How many payment methods can I use?</h1>
+                 <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
+                </div>
+
+                <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
+                <h1 className="">How can I deposit in an online casino?</h1>
                  <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
                 </div>
 
@@ -93,7 +98,7 @@ function Landing() {
                 </div>
 
                 <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
-                <h1 className="">How do I know if an online casino is safe?</h1>
+                <h1 className="">How can I withdraw my winnings?</h1>
                  <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
                 </div>
 
@@ -103,52 +108,47 @@ function Landing() {
                 </div>
 
                 <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
-                <h1 className="">How do I know if an online casino is safe?</h1>
+                <h1 className="">What are bonuses?</h1>
                  <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
                 </div>
 
                 <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
-                <h1 className="">How do I know if an online casino is safe?</h1>
+                <h1 className="">What are wagering requirements?</h1>
                  <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
                 </div>
 
                 <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
-                <h1 className="">How do I know if an online casino is safe?</h1>
+                <h1 className="">
+                    What if I don't want to receive bonuses?</h1>
+                 <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
+                </div>
+
+                <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
+                <h1 className="">What are free spins bonuses?</h1>
+                 <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
+                </div>
+
+                <div className="flex px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl">
+                <h1 className="">What are payout percentages?</h1>
                  <p className="bg-blood text-white rounded-full ml-auto px-2 text-right">+</p>
                 </div>
                
             </div>
 
-          <ul>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-              <li>hello</li>
-          </ul>
+          
+
+
+
+          <div className="text-white mt-10">
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+              <h1>footer</h1>
+          </div>
         </div>
     )
 }
