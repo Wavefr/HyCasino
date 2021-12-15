@@ -13,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      
-     <div className="flex">
-       <div>
+     <div className="flex flex-col md:flex md:flex-row">
+       <div className="">
        <SideBar/>
        </div>
        <div className="flex-col grow">

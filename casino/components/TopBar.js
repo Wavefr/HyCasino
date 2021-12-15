@@ -4,16 +4,16 @@ import flag from "../assets/flag.png"
 
 function TopBar() {
     return (
-        <div className="bg-primary2 w-full flex">
+        <div className="bg-primary2  flex">
            
     <div>
     <div className="relative text-white focus-within:text-white p-4 ">
-      <span className="absolute inset-y-0 left-0 flex  pl-10">
+      <span className="absolute inset-y-0 left-0 flex sm:pl-2 lg:pl-10">
         <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 text-white"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 invisible lg:visible text-white"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </button>
       </span>
-      <input type="search" name="q" className="py-2 text-sm text-white bg-primary rounded-xl px-24 focus:outline-none placeholder:text-white placeholder:text-ellipsis" placeholder="Search casinos or games" />
+      <input type="search" name="q" className="py-2 text-sm text-white bg-primary rounded-xl sm:px-15 lg:px-24 focus:outline-none placeholder:text-white placeholder:text-ellipsis" placeholder="Search casinos or games" />
     </div>
     </div>
 
