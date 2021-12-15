@@ -16,7 +16,7 @@ function SideBar() {
             </div>
 
             <div>
-                <ul className="ml-10">
+                <ul className="mx-20 lg:mx-10">
                     <div className="flex">
                     <Image src={cherry} alt="Picture of the author" width={25} height={25}
                     />
