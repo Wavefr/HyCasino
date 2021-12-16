@@ -3,6 +3,7 @@ import Landing from "../components/Landing"
 import SideBar from '../components/SideBar'
 import TopBar from '../components/TopBar'
 import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
        <div className="flex-col grow">
        <TopBar/>
        <Landing/>
+       <Footer/>
        </div>
      </div>
 

@@ -78,7 +78,7 @@ function Landing() {
                  title='hello'   />
             </div>
 
-            <div className="text-white mt-10">
+            <div className="text-white mt-10 pb-10">
                 <h1 className="text-center">FAQ</h1>
                 <p className="text-center">Do you have any questions? We have the answers. Browse our FAQ section and resolve your concerns instantly.
                 </p>
@@ -139,16 +139,7 @@ function Landing() {
 
 
 
-          <div className="text-white mt-10">
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-              <h1>footer</h1>
-          </div>
+         
         </div>
     )
 }
