@@ -1,8 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 import ArticlesData from '../data/ArticlesData'
 
 function Articles() {
+    const router = useRouter();
+
+    const go = (title,image,paragraph) => {
+      
+        router.push({
+          pathname: '/Article',
+          query: { title: title,image:image,paragraph }
+        });
+      
+    };
     return (
         <div className="bg-primary text-white">
            
@@ -15,7 +26,7 @@ function Articles() {
                         <div className="hover:cursor-pointer">
                         <Image src={m.image} alt="Picture of the author" width={340} height={245}
                             />
-                            <h1 className="ml-4 pb-5">{m.title}</h1>
+                            <h1 onClick={()=>go(m.title,m.image,m.paragraph)} className="ml-4 pb-5 hover:cursor-pointer hover:text-blood">{m.title}</h1>
                             
                         </div>
                     ))

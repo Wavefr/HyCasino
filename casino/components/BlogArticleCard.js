@@ -19,7 +19,7 @@ function BlogArticleCard() {
                         <div className="hover:cursor-pointer">
                         <Image src={m.image} alt="Picture of the author" width={540} height={345}
                             />
-                            <h1 className="ml-4 pb-5">{m.title}</h1>
+                            <h1 className="px-4 py-2 mt-4 bg-primary2 mx-4 rounded-3xl ml-4 pb-5 hover:cursor-pointer hover:text-blood">{m.title}</h1>
                         </div>
                     ))
                 }
@@ -35,7 +35,7 @@ function BlogArticleCard() {
                         <div className="hover:cursor-pointer">
                         <Image src={m.image} alt="Picture of the author" width={245} height={402}
                             />
-                            <h1 className="ml-10 pb-5">{m.title}</h1>
+                            <h1 className="ml-6 pb-5 px-4 text-center py-2 mt-4 bg-primary2 mx-4 rounded-3xl hover:cursor-pointer hover:bg-primary hover:text-blood">{m.title}</h1>
                         </div>
                     ))
                 }
