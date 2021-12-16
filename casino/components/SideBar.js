@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 import logo from "../assets/logo.png"
 import cherry from "../assets/cherry.png"
 import gift from "../assets/gift.png"
@@ -7,7 +9,20 @@ import games from "../assets/games.png"
 import blog from "../assets/blog.png"
 import pic from "../assets/pic.png"
 
-function SideBar() {
+function SideBar({href}) {
+    const router = useRouter()
+    const[blog1,setBlog1]=useState(false)
+    const[home,setHome]=useState(false)
+
+    useEffect(() => {
+       if(router.pathname=="/Blog"){
+          setHome(false)
+          setBlog1(true)
+       }else{
+            setBlog1(false)
+            setHome(true)
+       }
+    }, [router.pathname])
     return (
         <div className="max-w-full md:max-w-2xl lg:max-w-2xl h-full bg-primary2 text-white font-medium">
             <div className="p-6 justify-center">
@@ -18,9 +33,21 @@ function SideBar() {
             <div>
                 <ul className="mx-20 lg:mx-10">
                     <div className="flex">
+                    <Link href="/">
                     <Image src={cherry} alt="Picture of the author" width={25} height={25}
                     />
+                    </Link>
+                    {
+                        blog1?(<>
+                        <Link href="/">
+                    <li className="text-base hover:text-blood hover:cursor-pointer  ml-2">Casinos</li>
+                    </Link>
+                        </>):(<>
+                            <Link href="/">
                     <li className="text-base text-blood ml-2">Casinos</li>
+                    </Link>
+                        </>)
+                    }
                     </div>
                     <div className="flex mt-10">
                     <Image src={gift} alt="Picture of the author" width={25} height={25}
@@ -35,7 +62,17 @@ function SideBar() {
                     <div className="flex mt-10">
                     <Image src={blog} alt="Picture of the author" width={25} height={25}
                     />
+                   {
+                       blog1?(<>
+                        <Link href="/Blog">
+                    <li className="text-base  ml-2 text-blood hover:cursor-pointer">Blog</li>
+                    </Link>
+                       </>):(<>
+                        <Link href="/Blog">
                     <li className="text-base  ml-2 hover:text-blood hover:cursor-pointer">Blog</li>
+                    </Link>
+                       </>)
+                   }
                     </div>
                 </ul>
             </div>
